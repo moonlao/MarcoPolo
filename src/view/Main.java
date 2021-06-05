@@ -118,7 +118,7 @@ public class Main extends PApplet {
 				PVector vector = new PVector(polo.getPosX(), polo.getPosY());
 				PVector vector2 = new PVector(main.getMarco().getPosX(), main.getMarco().getPosY());
 				float angle = PVector.angleBetween(vector, vector2);
-				Polo newPolo = new Polo(main.getMarco().getPosX(), main.getMarco().getPosY(), Modelo.POLO_SPEED, main.getMarco().size, main.getMarco().getColor(),
+				Polo newPolo = new Polo(main.getMarco().getPosX(), main.getMarco().getPosY(), Modelo.POLO_SPEED, main.getMarco().size, Color.PINK,
 						main, (float) Math.toDegrees(angle));
 				main.setMarco(new Marco(polo.getPosX(), polo.getPosY(), Modelo.MARCO_SPEED, polo.size, Color.GREEN, main,
 						(float) Math.toDegrees(angle) + 180));

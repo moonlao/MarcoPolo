@@ -106,9 +106,9 @@ public class Modelo {
 				PVector vector = new PVector(polo.getPosX(), polo.getPosY());
 				PVector vector2 = new PVector(marco.getPosX(), marco.getPosY());
 				float angle = PVector.angleBetween(vector, vector2);
-				Polo newPolo = new Polo(marco.getPosX(), marco.getPosY(), POLO_SPEED, marco.size, marco.getColor(),
+				Polo newPolo = new Polo(marco.getPosX(), marco.getPosY(), POLO_SPEED, marco.size, Color.PINK,
 						this, (float) Math.toDegrees(angle));
-				marco = new Marco(polo.getPosX(), polo.getPosY(), MARCO_SPEED, polo.size, Color.GREEN, this,(float) Math.toDegrees(angle) + 180);
+				marco = new Marco(polo.getPosX(), polo.getPosY(), MARCO_SPEED + 1, polo.size, Color.GREEN, this,(float) Math.toDegrees(angle) + 180);
 				marco.noEstaAtrapando();
 				arregloPolo.add(newPolo);
 			}
